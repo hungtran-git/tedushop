@@ -5,7 +5,7 @@ using TeduShop.Model.Abtract;
 namespace TeduShop.Model.Models
 {
     [Table("Pages")]
-    public class Page : Auditable
+    public class Page : Auditable, IMetaInformation
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

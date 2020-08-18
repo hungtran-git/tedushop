@@ -51,11 +51,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="Infrastructure\RepositoryBase.cs" />
+    <Compile Include="Migrations\202008180823158_InitDatabase.cs" />
+    <Compile Include="Migrations\202008180823158_InitDatabase.designer.cs">
+      <DependentUpon>202008180823158_InitDatabase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repository\ProductRepository.cs" />
+    <Compile Include="Repository\ProductCategoryRepository.cs" />
+    <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\202008180823158_InitDatabase.resx">
+      <DependentUpon>202008180823158_InitDatabase.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\4.TeduShop.Model\4.TeduShop.Model.csproj">
+      <Project>{93e0b7dc-a955-4243-8a10-24a22aa3f453}</Project>
+      <Name>4.TeduShop.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\6.TeduShop.Common\5.TeduShop.Common.csproj">
+      <Project>{6bb51151-1893-4a62-b2d5-fcc023ac759d}</Project>
+      <Name>5.TeduShop.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

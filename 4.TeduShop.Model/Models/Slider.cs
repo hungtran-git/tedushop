@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using TeduShop.Model.Abtract;
 
-namespace TeduShop.Model
+namespace TeduShop.Model.Models
 {
     [Table("Sliders")]
     public class Slider : Auditable

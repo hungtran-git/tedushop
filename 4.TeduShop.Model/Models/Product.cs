@@ -28,8 +28,8 @@ namespace TeduShop.Model.Models
         [Required]
         [MaxLength(250)]
         public string Image { get; set; }//    nvarchar(500)   Unchecked
-
-        public XElement MoreImages { get; set; }//    xml Checked
+        [Column(TypeName ="xml")]
+        public string MoreImages { get; set; }//    xml Checked
         public decimal Price { get; set; }//    decimal (18, 2)	Unchecked
         public decimal? Promotion { get; set; }//    decimal (18, 2)	Checked
         public int? Warranty { get; set; }//    int Checked

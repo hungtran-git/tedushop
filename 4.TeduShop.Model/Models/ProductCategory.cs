@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using TeduShop.Model.Abtract;
 using TeduShop.Model.Models;
 
-namespace TeduShop.Model
+namespace TeduShop.Model.Models
 {
     [Table("ProductCategories")]
     public class ProductCategory : Auditable
