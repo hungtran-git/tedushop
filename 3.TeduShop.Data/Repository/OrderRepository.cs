@@ -5,10 +5,10 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repository
 {
-    public interface IOrderRepository
+    public interface IOrderRepository : IRepository<OrderDetail>
     {
     }
-    public class OrderRepository : RepositoryBase<Product>, IOrderRepository
+    public class OrderRepository : RepositoryBase<OrderDetail>, IOrderRepository
     {
         public OrderRepository(IDbFactory dbFactory):base(dbFactory)
         {

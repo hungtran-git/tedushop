@@ -1,18 +1,16 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using TeduShop.Data.Infrastructure;
+﻿using TeduShop.Data.Infrastructure;
 using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repository
 {
-    public interface IMenuRepository
+    public interface IMenuRepository : IRepository<Menu>
     {
     }
-    public class MenuRepository : RepositoryBase<Product>, IMenuRepository
-    {
-        public MenuRepository(IDbFactory dbFactory):base(dbFactory)
-        {
 
+    public class MenuRepository : RepositoryBase<Menu>, IMenuRepository
+    {
+        public MenuRepository(IDbFactory dbFactory) : base(dbFactory)
+        {
         }
     }
 }

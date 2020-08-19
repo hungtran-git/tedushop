@@ -5,20 +5,14 @@ using TeduShop.Model.Models;
 
 namespace TeduShop.Data.Repository
 {
-    public interface IProductCategoryRepository
+    public interface IProductTagRepository : IRepository<ProductTag>
     {
-        IEnumerable<ProductCategory> GetByAlias(string alias);
     }
-    public class ProductTagRepository : RepositoryBase<ProductCategory>, IProductCategoryRepository
+    public class ProductTagRepository : RepositoryBase<ProductTag>, IProductTagRepository
     {
         public ProductTagRepository(IDbFactory dbFactory):base(dbFactory)
         {
-             
-        }
 
-        public IEnumerable<ProductCategory> GetByAlias(string alias)
-        {
-            return this.DbContext.ProductCategories.Where(x=>x.Alias == alias);
         }
     }
 }

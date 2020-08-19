@@ -66,7 +66,7 @@
     <Compile Include="Repository\SystemConfigRepository.cs" />
     <Compile Include="Repository\SupportOnlineRepository.cs" />
     <Compile Include="Repository\SliderRepository.cs" />
-    <Compile Include="Repository\ProductRepositoryRepository.cs" />
+    <Compile Include="Repository\ProductTagRepository.cs" />
     <Compile Include="Repository\PostTagRepository.cs" />
     <Compile Include="Repository\PostCategoryRepository.cs" />
     <Compile Include="Repository\PostRepository.cs" />
@@ -77,7 +77,7 @@
     <Compile Include="Repository\MenuRepository.cs" />
     <Compile Include="Repository\FooterRepository.cs" />
     <Compile Include="Repository\ProductRepository.cs" />
-    <Compile Include="Repository\ProductTagRepository.cs" />
+    <Compile Include="Repository\ProductCategoryRepository.cs" />
     <Compile Include="TeduShopDbContext.cs" />
   </ItemGroup>
   <ItemGroup>
