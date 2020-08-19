@@ -42,6 +42,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MessageService.cs" />
+    <Compile Include="PostCategoryService.cs" />
+    <Compile Include="ProductCategoryService.cs" />
+    <Compile Include="ExampleService.cs" />
+    <Compile Include="ProductService.cs" />
     <Compile Include="PostService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
