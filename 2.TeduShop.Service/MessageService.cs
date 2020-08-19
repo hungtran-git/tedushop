@@ -18,12 +18,12 @@ namespace TeduShop.Service
 
         public ReturnMessage GetFailedReturnMessage()
         {
-            return new ReturnMessage() { Id = 1, Message = "Successfully" };
+            return new ReturnMessage() { Id = -1, Message = "Failed" };
         }
 
         public ReturnMessage GetSuccessReturnMessage()
         {
-            return new ReturnMessage() { Id = -1, Message = "Failed" };
+            return new ReturnMessage() { Id = 1, Message = "Successfully" };
         }
     }
 }
